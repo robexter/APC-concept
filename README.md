@@ -1,10 +1,20 @@
-# APC U39 Concept — V1.2.1 (correção mobile e atualização PWA)
+# APC U39 Concept — V1.2.2 (refinamento responsivo mobile)
 
 **Fonte técnica:** Guia de Operação Controle Avançado U39, Rev.01 (28/10/2024), 15 páginas.
 
 **Escopo:** protótipo educacional qualitativo, sem comunicação APC, PCWS, OPC, PID ou SDCD reais. Os valores constantes nas tabelas são históricos e **não** são limites operacionais autorizados atuais.
 
-## Correções da V1.2.1 (em relação à V1.2)
+## Correções da V1.2.2 (em relação à V1.2.1)
+
+- **Abas dos quatro subcontroladores:** atalhos em grade de duas colunas, com todas as opções visíveis, sem corte ou gesto lateral oculto; último atalho ocupa a largura inteira.
+- **Mapa de relações:** separa as regras do mapa lógico das regras legadas do diagrama `.mini-flow`. Remove posicionamento indevido da terceira e da quarta variável; usa cartões iguais em 2 colunas de 356 a 640 px e em uma coluna até 355 px.
+- **Legendas do mapa:** etiquetas legíveis, largura contida no cartão, melhor quebra de palavras.
+- **Tabelas largas:** manutenção do scroll horizontal interno e indicação explícita para deslizar, sem reduzir fontes ou remover colunas.
+- **Cache PWA:** atualização para `apc-u39-concept-v1.2.2`.
+- **Ícones:** preservados os ícones APC recentemente escolhidos e enviados ao GitHub nas versões 192/512.
+- **Sem alterações técnicas:** matriz, limites, banco do Quiz e CIC, cenários e lógica JavaScript mantidos integralmente.
+
+## Histórico da V1.2.1 (em relação à V1.2)
 
 - **UX/mobile:** campo da busca recebe `min-width:0` dentro do flex container, evitando extrapolação da largura em 320 px com a busca expandida.
 - **Controle de versão:** identificação V1.2.1 na interface, rodapé e manifesto.

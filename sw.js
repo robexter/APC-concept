@@ -1,5 +1,5 @@
-// APC U39 Concept V1.2.1: PWA offline; atualiza arquivos sem servir HTML desatualizado.
-const CACHE='apc-u39-concept-v1.2.1';
+// APC U39 Concept V1.2.2: PWA offline; atualiza arquivos sem servir HTML desatualizado.
+const CACHE='apc-u39-concept-v1.2.2';
 const STATIC=['./','./index.html','./app.css','./app.js','./config.js','./training.js','./cic.js','./manifest.json','./icons/icon-192.png','./icons/icon-512.png'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(c=>c.addAll(STATIC)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('apc-u39-concept-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
